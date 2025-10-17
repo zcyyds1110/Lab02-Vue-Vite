@@ -12,7 +12,7 @@ const fetchEvents = async () => {
   try {
     isLoading.value = true
     // 从my-json-server获取数据
-    const response = await fetch('https://my-json-server.typicode.com/zyyds1110/Lab02-Vue-Vite/events')
+    const response = await fetch('https://my-json-server.typicode.com/zcyyds1110/Lab02-Vue-Vite/events')
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`)
     }
