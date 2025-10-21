@@ -43,6 +43,72 @@
       "time": "14:00",
       "petsAllowed": false,
       "organizer": "Dev Mentor"
+    },
+    {
+      "id": 1010101,
+      "category": "sports",
+      "title": "Marathon Race",
+      "description": "Annual city marathon with various categories.",
+      "location": "Downtown",
+      "date": "November 5, 2022",
+      "time": "08:00",
+      "petsAllowed": false,
+      "organizer": "Fit City"
+    },
+    {
+      "id": 2020202,
+      "category": "art",
+      "title": "Art Exhibition",
+      "description": "Showcase of local artists' work.",
+      "location": "Culture Center",
+      "date": "December 10, 2022",
+      "time": "15:00",
+      "petsAllowed": true,
+      "organizer": "Art Collective"
+    },
+    {
+      "id": 3030303,
+      "category": "music",
+      "title": "Jazz Night",
+      "description": "Evening of live jazz music.",
+      "location": "Blue Note Club",
+      "date": "February 14, 2023",
+      "time": "20:00",
+      "petsAllowed": false,
+      "organizer": "Music Lovers Association"
+    },
+    {
+      "id": 4040404,
+      "category": "technology",
+      "title": "AI Conference",
+      "description": "Discussions on the future of artificial intelligence.",
+      "location": "Innovation Center",
+      "date": "April 12, 2023",
+      "time": "09:00",
+      "petsAllowed": false,
+      "organizer": "Tech Innovators"
+    },
+    {
+      "id": 5050505,
+      "category": "food",
+      "title": "Food Festival",
+      "description": "Taste dishes from around the world.",
+      "location": "Central Park",
+      "date": "June 21, 2023",
+      "time": "12:00",
+      "petsAllowed": true,
+      "organizer": "Culinary Association"
+    },
+    {
+      "id": 6060606,
+      "category": "education",
+      "title": "Book Fair",
+      "description": "Large collection of books from various publishers.",
+      "location": "Convention Center",
+      "date": "August 30, 2023",
+      "time": "10:00",
+      "petsAllowed": false,
+      "organizer": "Literary Society"
     }
   ]
 }
