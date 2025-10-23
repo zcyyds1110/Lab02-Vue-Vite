@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import EventCard from '@/components/EventCard.vue'
+import EventMeta from '@/components/EventMeta.vue'
 import type { Event } from '@/types'
 import { ref, onMounted, computed, watchEffect } from 'vue'
 import EventService from '@/services/EventService'
@@ -23,14 +24,13 @@ const page = computed(() => props.page)
 const events = ref<Event[] | null>(null)
 const totalEvents = ref(0)
 const hasNextPage = computed(() => {
-  const totalPages = Math.ceil(totalEvents.value / props.pageSize)
+  const totalPages = Math.ceil(totalEvents.value / 3)
   return page.value < totalPages
 })
 
 onMounted(() => {
   watchEffect(() => {
-    events.value = null
-    EventService.getEvents(props.pageSize, page.value)
+    EventService.getEvents(3, page.value)
       .then((response) => {
         console.log(response.data)
         events.value = response.data

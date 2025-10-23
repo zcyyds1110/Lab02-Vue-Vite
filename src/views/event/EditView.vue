@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import { toRefs, defineProps } from 'vue'
+import { useRouter } from 'vue-router'
+import { useMessageStore } from '@/stores/message'
 import { type Event } from '@/types'
 
 const props = defineProps<{
@@ -8,7 +10,19 @@ const props = defineProps<{
 }>()
 // eslint-disable-next-line @typescript-eslint/no-unused-vars 
 const { event } = toRefs(props)
+const router = useRouter()
+const store = useMessageStore()
+
+const handleEdit = () => {
+  // Simulate successful data update
+  store.updateMessage('The data has been updated')
+  setTimeout(() => {
+    store.resetMessage()
+  }, 3000)
+  router.push({ name: 'event-detail-view', params: { id: props.event.id } })
+}
 </script>
 <template>
   <p>Edit event here</p>
+  <button @click="handleEdit">Save Changes</button>
 </template>
