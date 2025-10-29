@@ -60,7 +60,7 @@ const updatePageSize = () => {
       <option value="5">5</option>
     </select>
   </div>
-  <div class="events">
+  <div class="flex flex-col items-center">
       <div v-for="event in events" :key="event.id" class="event-container">
         <EventCard :event="event" />
         <EventMeta :event="event" />
@@ -86,11 +86,6 @@ const updatePageSize = () => {
 </template>
 
 <style scoped>
-.events {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 .event-container {
   margin-bottom: 20px;
 }
